@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones aritméticas básicas</title>
+    <!-- el mensaje de error que aparece en la consola de inspeccion es el favicon -->
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+
+    <script>
+        // Declaración variables:
+        let cifra1, cifra2, suma, resta;
+
+        //Ventana modalde inserción de datos: prompt () :
+        cifra1 = prompt("Dame un número");
+        cifra2 = prompt("Dame otro número");
+
+        //Operaciones:
+        // En VSCode cuando ponemos cifra1= ya es "leer" en el otro programa //
+        suma = cifra1 + cifra2; //Expresión --> toda instruccion que devuelve algo
+        resta = cifra1 - cifra2; //Puede haber número negativos pero puede forzarse que ponga el mayor delante
+
+        // Template literals (plantilla de caracteres literal)
+        // No pueden usarse cualquier comillas, hay que usar la del ^[, es decir, ``
+        // Las otras si usamos mases, (+)
+        alert (`${cifra1} + ${cifra2}=${suma}`);
+        alert (`${cifra1} - ${cifra2}=${resta}`);
+
+        // ó  alert (`${cifra1} + ${cifra2}=${suma}`
+        //          `${cifra1} - ${cifra2}=${resta}`);
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
